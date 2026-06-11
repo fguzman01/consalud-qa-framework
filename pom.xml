@@ -15,7 +15,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
+        <cucumber.version>7.15.0</cucumber.version>
         <selenium.version>4.21.0</selenium.version>
         <webdrivermanager.version>5.8.0</webdrivermanager.version>
         <karate.version>1.4.1</karate.version>
@@ -24,37 +24,57 @@
 
     <dependencies>
 
-        <!-- SELENIUM -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
+    <!-- SELENIUM -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>${selenium.version}</version>
+    </dependency>
 
-        <!-- WEBDRIVER MANAGER -->
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>${webdrivermanager.version}</version>
-        </dependency>
+    <!-- WEBDRIVER MANAGER -->
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>${webdrivermanager.version}</version>
+    </dependency>
 
-        <!-- KARATE - reemplaza la que tienes -->
-        <dependency>
-            <groupId>com.intuit.karate</groupId>
-            <artifactId>karate-junit5</artifactId>
-            <version>1.4.0</version>
-            <scope>test</scope>
-        </dependency>
+    <!-- CUCUMBER -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>${cucumber.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit-platform-engine</artifactId>
+        <version>${cucumber.version}</version>
+        <scope>test</scope>
+    </dependency>
 
-        <!-- JUNIT 5 -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>${junit5.version}</version>
-            <scope>test</scope>
-        </dependency>
+    <!-- JUNIT 5 -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>${junit5.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-suite</artifactId>
+        <version>1.10.2</version>
+        <scope>test</scope>
+    </dependency>
 
-    </dependencies>
+    <!-- KARATE -->
+    <dependency>
+        <groupId>com.intuit.karate</groupId>
+        <artifactId>karate-junit5</artifactId>
+        <version>${karate.version}</version>
+        <scope>test</scope>
+    </dependency>
+
+</dependencies>
 
     <build>
         <plugins>
