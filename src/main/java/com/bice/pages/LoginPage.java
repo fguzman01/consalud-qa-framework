@@ -60,6 +60,15 @@ public class LoginPage extends BasePage {
         }
     }
 
+    public boolean isAlertPresent() {
+        try {
+            driver.switchTo().alert();
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
     public boolean isLoginPageDisplayed() {
         return isDisplayed(userField);
     }

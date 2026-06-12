@@ -4,12 +4,15 @@ import com.bice.config.ConfigManager;
 import com.bice.config.WebDriverFactory;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import io.qameta.allure.Allure;
+import java.io.ByteArrayInputStream;
 import java.time.Duration;
 
 public abstract class BasePage {
@@ -33,6 +36,7 @@ public abstract class BasePage {
             System.out.println("[CLICK] → " + describe(element));
             element.click();
         } catch (Exception e) {
+            takeScreenshot("FAIL_click_" + describe(element));
             System.err.println("[ERROR] clickElement falló en: " + describe(element));
             throw new RuntimeException("No se pudo hacer click en: " + describe(element), e);
         }
@@ -48,19 +52,21 @@ public abstract class BasePage {
             element.clear();
             element.sendKeys(text);
         } catch (Exception e) {
+            takeScreenshot("FAIL_type_" + describe(element));
             System.err.println("[ERROR] typeText falló en: " + describe(element));
             throw new RuntimeException("No se pudo escribir en: " + describe(element), e);
         }
     }
 
     // Metodo generico para realizar obtener text del elemento
-    protected String getText(WebElement element) {
+    public String getText(WebElement element) {
         try {
             wait.until(ExpectedConditions.visibilityOf(element));
             String text = element.getText().trim();
             System.out.println("[GET TEXT] → " + describe(element) + " | texto: " + text);
             return text;
         } catch (Exception e) {
+            takeScreenshot("FAIL_get_" + describe(element));
             System.err.println("[ERROR] getText falló en: " + describe(element));
             throw new RuntimeException("No se pudo obtener texto de: " + describe(element), e);
         }
@@ -110,6 +116,16 @@ public abstract class BasePage {
             return "elemento desconocido";
         }
     }
+
+    public void takeScreenshot(String name) {
+    try {
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
+        Allure.addAttachment(name, new ByteArrayInputStream(screenshot));
+    } catch (Exception e) {
+        System.err.println("[ERROR] Screenshot fallido: " + e.getMessage());
+    }
+}
 
 
 

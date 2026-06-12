@@ -6,7 +6,8 @@ public class KarateRunner {
 
     @Karate.Test
     Karate apiTests() {
-        return Karate.run("classpath:features/api/users.feature");
+        return Karate.run("classpath:features/api/users.feature")
+        .outputCucumberJson(true);
     }
 
 }

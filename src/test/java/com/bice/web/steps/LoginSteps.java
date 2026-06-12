@@ -11,6 +11,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.Scenario;
 
 public class LoginSteps {
 
@@ -27,7 +28,10 @@ public class LoginSteps {
 
     // Quit driver al finalizar
     @After
-    public void tearDown() {
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
+        loginPage.takeScreenshot("FAIL_" + scenario.getName());
+        }
         WebDriverFactory.quitDriver();
     }
 

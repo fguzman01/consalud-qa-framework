@@ -1,6 +1,7 @@
 package com.bice.flows;
 
 import com.bice.pages.LoginPage;
+import com.bice.utils.actions.WaitActions;
 
 public class LoginFlow {
 
@@ -17,6 +18,10 @@ public class LoginFlow {
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
         loginPage.clickLogin();
+
+        if (!loginPage.isAlertPresent()) {
+            loginPage.takeScreenshot("LOGIN_COMPLETADO_" + username);
+        }
         System.out.println("[FLOW] Login completado");
     }
 

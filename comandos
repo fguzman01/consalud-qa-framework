@@ -9,3 +9,7 @@ mvn test -Dtest=CucumberRunner
 
 # Todos juntos
 mvn test
+
+mvn dependency:resolve
+
+mvn allure:report
