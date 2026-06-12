@@ -3,6 +3,10 @@
     "username": "mngr662929",
     "password": "AqYgEzY"
   },
+  "validUser2": {
+    "username": "mngr662968",
+    "password": "AnYbYpU"
+  },
   "invalidUser": {
     "username": "mngr662929",
     "password": "wrongpass"

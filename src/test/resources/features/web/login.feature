@@ -15,7 +15,12 @@ Feature: Login ParaBank
     Examples:
       | usuario    | password |
       | mngr662929 | AqYgEzY  |
+      | mngr662968 | AnYbYpU  |
 
   Scenario: Login con credenciales inválidas
     When ingresa usuario "mngr662929" y password "wrongpass"
+    Then debe ver un mensaje de error
+
+  Scenario: Login con usuario invalido desde DataProvider
+    When el usuario invalido intenta ingresar
     Then debe ver un mensaje de error

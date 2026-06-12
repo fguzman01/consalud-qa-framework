@@ -45,6 +45,16 @@ public class LoginSteps {
         loginFlow.loginAs(username, password);
     }
 
+    @When ("el usuario invalido intenta ingresar")
+    public void elUsuarioInvalidoIntentaIngresar(){
+        //Instancia data provider
+        UserData user = DataProvider.getUser("invalidUser");
+        System.out.println("[DATA] Usuario desde JSON: " + user.getUsername());
+        loginFlow.loginAs(user.getUsername(), user.getPassword());
+
+    }
+
+
     @Then("debe ver la página de cuentas")
     public void debeVerLaPaginaDeCuentas() {
         assert loginPage.isLoginSuccessful() 

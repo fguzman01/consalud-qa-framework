@@ -32,6 +32,14 @@
             <version>${selenium.version}</version>
         </dependency>
 
+        <!-- SLF4J bridge para Karate -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.9</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- WEBDRIVER MANAGER -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -67,6 +75,7 @@
             <version>${allure.version}</version>
             <scope>test</scope>
         </dependency>
+
         <!-- ALLURE CORE -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
