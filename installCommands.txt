@@ -1,0 +1,7 @@
+npm init playwright@latest
+
+npm install --save-dev allure-playwright
+
+npm i --save-dev @types/node
+
+npm install --save-dev rimraf

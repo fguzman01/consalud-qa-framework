@@ -1,0 +1,30 @@
+{
+  "name": "consalud-qa-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:headless": "playwright test --headless",
+    "test:report": "rimraf allure-results && playwright test && allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fguzman01/consalud-qa-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fguzman01/consalud-qa-framework/issues"
+  },
+  "homepage": "https://github.com/fguzman01/consalud-qa-framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "allure-playwright": "^3.10.2",
+    "rimraf": "^6.1.3"
+  }
+}

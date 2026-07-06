@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6987","Login fallido usuario empaty","chromium","2026-07-06","passed","2026-07-06","Login - demoblaze","login.spec.ts","",""
+"","7072","Login fallido con credenciales inválidas","chromium","2026-07-06","passed","2026-07-06","Login - demoblaze","login.spec.ts","",""
+"","7513","Login exitoso con credenciales válidas","chromium","2026-07-06","passed","2026-07-06","Login - demoblaze","login.spec.ts","",""

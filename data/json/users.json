@@ -1,0 +1,14 @@
+{
+    "validUser": {
+        "username": "felipe.guzman.a@gmail.com",
+        "password": "123456"
+    },
+    "invalidUser": {
+        "username": "wrong@gmail.com",
+        "password": "wrongpassword"
+    },
+    "empatyUser": {
+        "username": "",
+        "password": ""
+    }
+}
