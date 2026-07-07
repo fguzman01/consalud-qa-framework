@@ -4,3 +4,8 @@ npx playwright test tests/login.spec.ts --ui
 
 npx allure generate allure-results --clean -o allure-report
 npx allure open allure-report
+
+npm install --save-dev @cucumber/cucumber
+npm install --save-dev @cucumber/pretty-formatter
+
+npm install --save-dev ts-node

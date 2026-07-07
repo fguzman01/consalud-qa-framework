@@ -1,0 +1,144 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login---demoblaze;login-exitoso-con-credenciales-validas",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Login exitoso con credenciales validas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3089599099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "el usuario inicia sesion con usuario \"felipe.guzman.a@gmail.com\" y contraseña \"123456\"",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4150515999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "el usuario debe ver su nombre en el nvbar",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 872795400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 312468600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login---demoblaze;login-fallido-con-credenciales-invalidas",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Login fallido con credenciales invalidas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2695097299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "el usuario inicia sesion con usuario \"wrong@gmail.com\" y contraseña \"wrongpassword\"",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4168719600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "debe aparecer un alerta con el mensaje \"User does not exist.\"",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8697703499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 289438600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login---demoblaze",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "Login - Demoblaze",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "cucumber\\features\\login.feature"
+  }
+]

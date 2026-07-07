@@ -7,7 +7,8 @@
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:headless": "playwright test --headless",
-    "test:report": "rimraf allure-results && playwright test && allure generate allure-results --clean -o allure-report && allure open allure-report"
+    "test:report": "rimraf allure-results && playwright test && allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "cucumber": "cucumber-js --config cucumber.json"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,12 @@
   },
   "homepage": "https://github.com/fguzman01/consalud-qa-framework#readme",
   "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@cucumber/pretty-formatter": "^4.0.0",
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
     "allure-playwright": "^3.10.2",
-    "rimraf": "^6.1.3"
+    "rimraf": "^6.1.3",
+    "ts-node": "^10.9.2"
   }
 }
