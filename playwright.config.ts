@@ -9,7 +9,7 @@ export default defineConfig({
 
   use: {
     baseURL: 'https://www.demoblaze.com/index.html',
-    headless: false,
+    headless: true,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },
