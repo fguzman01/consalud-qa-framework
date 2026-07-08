@@ -9,6 +9,8 @@ export class LoginPage {
     readonly passwordInput: Locator;
     readonly loginButton: Locator;
     readonly closeButton: Locator;
+    readonly loginModalShow: Locator;
+    readonly buttonCloseModal : Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -19,6 +21,8 @@ export class LoginPage {
         this.passwordInput = page.locator('#loginpassword');
         this.loginButton = page.locator('[onclick="logIn()"]');
         this.closeButton = page.locator('//button[@onclick="logIn()"]/preceding-sibling::button');
+        this.loginModalShow = page.locator('//div[@class="modal fade show" and @id="logInModal"]');
+        this.buttonCloseModal = page.locator('//h5[@id="logInModalLabel"]/following-sibling::button[@type="button" and @class="close"]');
 
     }
 
@@ -46,4 +50,15 @@ export class LoginPage {
         console.log('Closing login modal...');
         await this.closeButton.click();
     }
+
+    async esperarModalVisible (){
+        console.log('Valida modal login visible')
+        await this.loginModalShow.waitFor({ state: 'visible' });
+    }
+
+    async cerrarModal (){
+        console.log ('Cerra el model del login')
+        await this.buttonCloseModal.click()
+    }
+
 }

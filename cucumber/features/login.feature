@@ -9,7 +9,13 @@ Feature: Login - Demoblaze
         When el usuario inicia sesion con usuario "felipe.guzman.a@gmail.com" y contraseña "123456"
         Then el usuario debe ver su nombre en el nvbar
 
-    Scenario: Login fallido con credenciales invalidas
-        When el usuario inicia sesion con usuario "wrong@gmail.com" y contraseña "wrongpassword"
-        Then debe aparecer un alerta con el mensaje "User does not exist."
+
+    Scenario: Login exitoso redirige a la pagina principal
+        When el usuario inicia sesion con usuario "felipe.guzman.a@gmail.com" y contraseña "123456"
+        Then el titulo de la pagina debe ser "STORE"
+    
+    Scenario: Cerrar modal de login
+        When el usuario abre el modal de login
+        Then el usuario cierra el modal
+        And el modal de login no debe ser visible
 

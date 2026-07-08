@@ -1,0 +1,2 @@
+Extrae el nombre del producto
+CLick en el primer producto de la lista

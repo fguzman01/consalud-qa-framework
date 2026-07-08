@@ -15,11 +15,11 @@
             "line": 6,
             "name": "el usuario esta en la pagina de inicio",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:16"
+              "location": "cucumber\\steps\\login.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 3089599099
+              "duration": 2443861699
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 9,
             "name": "el usuario inicia sesion con usuario \"felipe.guzman.a@gmail.com\" y contraseña \"123456\"",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:25"
+              "location": "cucumber\\steps\\login.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 4150515999
+              "duration": 2153820899
             }
           },
           {
@@ -41,11 +41,11 @@
             "line": 10,
             "name": "el usuario debe ver su nombre en el nvbar",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:29"
+              "location": "cucumber\\steps\\login.steps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 872795400
+              "duration": 1115624900
             }
           },
           {
@@ -53,7 +53,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 312468600
+              "duration": 266466199
             }
           }
         ],
@@ -67,10 +67,10 @@
       },
       {
         "description": "",
-        "id": "login---demoblaze;login-fallido-con-credenciales-invalidas",
+        "id": "login---demoblaze;login-exitoso-redirige-a-la-pagina-principal",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Login fallido con credenciales invalidas",
+        "line": 13,
+        "name": "Login exitoso redirige a la pagina principal",
         "steps": [
           {
             "arguments": [],
@@ -78,37 +78,37 @@
             "line": 6,
             "name": "el usuario esta en la pagina de inicio",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:16"
+              "location": "cucumber\\steps\\login.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 2695097299
+              "duration": 2317432899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
-            "name": "el usuario inicia sesion con usuario \"wrong@gmail.com\" y contraseña \"wrongpassword\"",
+            "line": 14,
+            "name": "el usuario inicia sesion con usuario \"felipe.guzman.a@gmail.com\" y contraseña \"123456\"",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:25"
+              "location": "cucumber\\steps\\login.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 4168719600
+              "duration": 2134214399
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "debe aparecer un alerta con el mensaje \"User does not exist.\"",
+            "line": 15,
+            "name": "el titulo de la pagina debe ser \"STORE\"",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:35"
+              "location": "cucumber\\steps\\login.steps.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 8697703499
+              "duration": 11150600
             }
           },
           {
@@ -116,7 +116,83 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 289438600
+              "duration": 281372400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login---demoblaze;cerrar-modal-de-login",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Cerrar modal de login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2284674999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "el usuario abre el modal de login",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 547256000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "el usuario cierra el modal",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 556744699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "el modal de login no debe ser visible",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4991099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 260362100
             }
           }
         ],
