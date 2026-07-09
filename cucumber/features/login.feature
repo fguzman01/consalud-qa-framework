@@ -19,3 +19,6 @@ Feature: Login - Demoblaze
         Then el usuario cierra el modal
         And el modal de login no debe ser visible
 
+    Scenario: Verificar que el boton de login esta disponible en la pagina
+        Then el boton de login debe estar visible
+

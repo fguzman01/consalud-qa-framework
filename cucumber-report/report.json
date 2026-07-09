@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2443861699
+              "duration": 3470269700
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2153820899
+              "duration": 2150360599
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1115624900
+              "duration": 1080678299
             }
           },
           {
@@ -53,7 +53,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 266466199
+              "duration": 309877100
             }
           }
         ],
@@ -82,7 +82,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2317432899
+              "duration": 3043521199
             }
           },
           {
@@ -95,7 +95,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2134214399
+              "duration": 2148036000
             }
           },
           {
@@ -104,11 +104,11 @@
             "line": 15,
             "name": "el titulo de la pagina debe ser \"STORE\"",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:44"
+              "location": "cucumber\\steps\\login.steps.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 11150600
+              "duration": 8876100
             }
           },
           {
@@ -116,7 +116,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 281372400
+              "duration": 306589899
             }
           }
         ],
@@ -145,7 +145,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2284674999
+              "duration": 2937474200
             }
           },
           {
@@ -154,11 +154,11 @@
             "line": 18,
             "name": "el usuario abre el modal de login",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:49"
+              "location": "cucumber\\steps\\login.steps.ts:47"
             },
             "result": {
               "status": "passed",
-              "duration": 547256000
+              "duration": 561150000
             }
           },
           {
@@ -167,11 +167,11 @@
             "line": 19,
             "name": "el usuario cierra el modal",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:54"
+              "location": "cucumber\\steps\\login.steps.ts:52"
             },
             "result": {
               "status": "passed",
-              "duration": 556744699
+              "duration": 543806500
             }
           },
           {
@@ -180,11 +180,11 @@
             "line": 20,
             "name": "el modal de login no debe ser visible",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:62"
+              "location": "cucumber\\steps\\login.steps.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 4991099
+              "duration": 4847399
             }
           },
           {
@@ -192,7 +192,57 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 260362100
+              "duration": 255180700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login---demoblaze;verificar-que-el-boton-de-login-esta-disponible-en-la-pagina",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Verificar que el boton de login esta disponible en la pagina",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2274154399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "el boton de login debe estar visible",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18473599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 262460900
             }
           }
         ],
