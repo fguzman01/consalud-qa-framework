@@ -1,0 +1,5 @@
+Extrae el nombre del producto
+CLick en el primer producto de la lista
+Se agrega producto al carro
+CLikc en añadir al carro
+Hacer click en comprar

@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3470269700
+              "duration": 3175927199
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2150360599
+              "duration": 2149628800
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1080678299
+              "duration": 1098366400
             }
           },
           {
@@ -53,7 +53,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 309877100
+              "duration": 289122699
             }
           }
         ],
@@ -82,7 +82,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3043521199
+              "duration": 3025257999
             }
           },
           {
@@ -95,7 +95,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2148036000
+              "duration": 2135233400
             }
           },
           {
@@ -108,7 +108,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8876100
+              "duration": 4751400
             }
           },
           {
@@ -116,7 +116,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 306589899
+              "duration": 289422399
             }
           }
         ],
@@ -145,7 +145,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2937474200
+              "duration": 2236510700
             }
           },
           {
@@ -158,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 561150000
+              "duration": 569554800
             }
           },
           {
@@ -171,7 +171,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 543806500
+              "duration": 527181099
             }
           },
           {
@@ -184,7 +184,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4847399
+              "duration": 5099200
             }
           },
           {
@@ -192,7 +192,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 255180700
+              "duration": 279069400
             }
           }
         ],
@@ -221,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2274154399
+              "duration": 2382383900
             }
           },
           {
@@ -234,7 +234,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18473599
+              "duration": 17466399
             }
           },
           {
@@ -242,7 +242,96 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 262460900
+              "duration": 254899000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login---demoblaze;login-y-logout-exitoso",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Login y logout exitoso",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2161006900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "el usuario inicia sesion con usuario \"felipe.guzman.a@gmail.com\" y contraseña \"123456\"",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2127521000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "el usuario debe ver su nombre en el nvbar",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1138784700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "el usuario hace logout",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 764533600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "el boton de login debe estar visible",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12032800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 265237399
             }
           }
         ],

@@ -11,6 +11,7 @@ export class LoginPage {
     readonly closeButton: Locator;
     readonly loginModalShow: Locator;
     readonly buttonCloseModal : Locator;
+    readonly buttonLogOut : Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -23,6 +24,7 @@ export class LoginPage {
         this.closeButton = page.locator('//button[@onclick="logIn()"]/preceding-sibling::button');
         this.loginModalShow = page.locator('//div[@class="modal fade show" and @id="logInModal"]');
         this.buttonCloseModal = page.locator('//h5[@id="logInModalLabel"]/following-sibling::button[@type="button" and @class="close"]');
+        this.buttonLogOut = page.locator('[onclick="logOut()"]')
 
     }
 
@@ -59,6 +61,11 @@ export class LoginPage {
     async cerrarModal (){
         console.log ('Cerra el model del login')
         await this.buttonCloseModal.click()
+    }
+
+    async clickLogOut (){
+        console.log('CLick en logOut')
+        await this.buttonLogOut.click()
     }
 
 }

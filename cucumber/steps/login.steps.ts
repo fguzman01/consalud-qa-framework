@@ -66,7 +66,11 @@ Then ('el boton de login debe estar visible', async ()=>{
 
 })
 
+Then ('el usuario hace logout', async ()=>{
+    console.log('Step cando se hace logout')
+    await loginPage.clickLogOut()
 
+})
 
 
 

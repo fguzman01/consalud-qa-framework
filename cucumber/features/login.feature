@@ -21,4 +21,10 @@ Feature: Login - Demoblaze
 
     Scenario: Verificar que el boton de login esta disponible en la pagina
         Then el boton de login debe estar visible
+    
+    Scenario: Login y logout exitoso
+        When el usuario inicia sesion con usuario "felipe.guzman.a@gmail.com" y contraseña "123456"
+        Then el usuario debe ver su nombre en el nvbar
+        When el usuario hace logout
+        Then el boton de login debe estar visible
 
