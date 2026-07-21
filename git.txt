@@ -1,0 +1,23 @@
+# Setup inicial
+git clone <url>
+git checkout -b felipe-guzman                        # crear y cambiar rama
+git checkout main                                    # cambiar rama
+
+# Trabajo diario
+git status                                           # ver estado
+git add .                                            # agregar cambios
+git commit -m "feat: descripcion"                    # commitear
+git push origin felipe-guzman                        # subir rama
+
+# Historial
+git log                                              # historial completo
+git log --oneline                                    # historial resumido
+git branch                                           # ver ramas
+
+# Deshacer
+git reset --soft HEAD~1                              # deshacer último commit
+git rm -r --cached <archivo>                         # sacar del tracking
+
+# Borrar rama
+git branch -D nombre-rama                            # borrar local
+git push origin --delete nombre-rama                 # borrar remoto

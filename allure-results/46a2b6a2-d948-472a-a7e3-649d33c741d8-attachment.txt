@@ -1,0 +1,2 @@
+Espera segundo elemento
+Boton add to cart visible

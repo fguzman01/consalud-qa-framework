@@ -1,0 +1,8 @@
+Status POST: 201
+Response POST: {
+  "title": "Test Consalud",
+  "body": "Contenido",
+  "userId": 1,
+  "id": 101
+}
+Id creado: 101

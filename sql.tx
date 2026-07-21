@@ -1,0 +1,18 @@
+Desafío 5 — SQL
+SELECT *
+FROM usuarios
+WHERE email LIKE '%@gmail.com'
+ORDER BY nombre ASC
+
+Escribe una query que cuente cuántos usuarios hay por cada país, ordenado de mayor a menor.
+-- bien
+SELECT pais, COUNT(*) as total
+FROM usuarios
+GROUP BY pais
+ORDER BY total DESC
+
+Escribe una query que retorne el producto más caro de una tabla productos que tiene columnas nombre y precio.
+SELECT nombre, precio
+FROM productos
+ORDER BY precio DESC
+LIMIT 1;

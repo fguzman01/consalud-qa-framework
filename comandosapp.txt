@@ -1,0 +1,17 @@
+# Node.js / React / Vue
+npm start
+npm run dev
+npm run serve
+
+# Next.js
+npm run dev
+
+# Angular
+ng serve
+
+# Python
+python app.py
+python -m flask run
+
+# Java / Spring Boot
+mvn spring-boot:run

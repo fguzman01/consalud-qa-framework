@@ -1,0 +1,33 @@
+# Instalar dependencias
+npm install
+npm ci                          # para CI/CD
+
+# Instalar paquetes
+npm install --save-dev @playwright/test
+npm install --save-dev @cucumber/cucumber
+npm install --save-dev ts-node
+npm install --save-dev @types/node
+
+# Playwright
+npx playwright test                                    # todos los tests
+npx playwright test tests/login.spec.ts               # un archivo específico
+npx playwright test --project=chromium                # un browser
+npx playwright test --headed                          # con browser visible
+npx playwright test --ui                              # modo UI interactivo
+npx playwright install                                # instalar browsers
+npx playwright install --with-deps                    # instalar browsers + deps
+
+# TypeScript
+npx ts-node logic/ejercicio1.ts                       # ejecutar archivo TS
+
+# Cucumber
+npm run cucumber                                      # ejecutar cucumber
+
+# Allure
+allure generate allure-results --clean -o allure-report
+allure open allure-report
+
+npm run test              # playwright headless
+npm run test:headed       # playwright con browser
+npm run test:report       # playwright + allure
+npm run cucumber          # cucumber

@@ -4,6 +4,7 @@ import { LoginFlow } from '../../flows/LoginFlow';
 import {expect} from '@playwright/test'
 import { After } from '@cucumber/cucumber';
 import { LoginPage } from '../../pages/LoginPage';
+import console from 'node:console';
 
 setDefaultTimeout(30000);
 
@@ -69,9 +70,33 @@ Then ('el boton de login debe estar visible', async ()=>{
 Then ('el usuario hace logout', async ()=>{
     console.log('Step cando se hace logout')
     await loginPage.clickLogOut()
-
 })
 
+Then('el titulo de la pagina deser {string}', async(titulo:string)=>{
+    console.log('el titulo de la pagina debe ser', titulo)
+    await expect(page).toHaveTitle(titulo);
+})
+
+
+When('usuario hace click en sigup', async()=>{
+    console.log('Step click en signup')
+    await loginPage.clickSignUp()
+})
+
+Then('debe estar visible el modal de sigup', async()=>{
+    console.log('Modal signup debe estar visible')
+    await expect(page.locator('[id="signInModal"]')).toBeVisible()
+})
+
+When ('click en ir a aboutus', async()=>{
+    console.log('hacer click en about us')
+    await page.locator('[data-target="#videoModal"]').click()
+})
+
+Then ('debe estar visible video', async()=>{
+    console.log('debe estar visible videp')
+    await expect(page.locator('[title="Play Video"]')).toBeVisible()
+})
 
 
 After(async function() {

@@ -1,0 +1,4 @@
+Producto 1 agregado: Product added
+Producto 2 agregado: Product added
+Producto 3 agregado: Product added
+Productos en carrito: 3

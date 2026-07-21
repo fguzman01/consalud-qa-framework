@@ -27,4 +27,24 @@ Feature: Login - Demoblaze
         Then el usuario debe ver su nombre en el nvbar
         When el usuario hace logout
         Then el boton de login debe estar visible
+    
+    Scenario Outline: Verificar titulo de la pagina
+        Then el titulo de la pagina deser "<titulo>"
+
+        Examples:
+            | titulo |
+            | STORE  |
+
+    Scenario: Validar que la pagina de Demoblaze carga correctamente
+         Given el usuario esta en la pagina de inicio
+         Then el titulo de la pagina debe ser "STORE"
+
+    Scenario: CLick en sigup y validar moda visible
+        When usuario hace click en sigup
+        Then debe estar visible el modal de sigup
+
+    Scenario: Scenario validar about us
+        When click en ir a aboutus
+        Then debe estar visible video
+    
 

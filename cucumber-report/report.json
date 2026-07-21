@@ -15,11 +15,11 @@
             "line": 6,
             "name": "el usuario esta en la pagina de inicio",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:18"
+              "location": "cucumber\\steps\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 3175927199
+              "duration": 2603460499
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 9,
             "name": "el usuario inicia sesion con usuario \"felipe.guzman.a@gmail.com\" y contraseña \"123456\"",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:28"
+              "location": "cucumber\\steps\\login.steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 2149628800
+              "duration": 2174544299
             }
           },
           {
@@ -41,11 +41,11 @@
             "line": 10,
             "name": "el usuario debe ver su nombre en el nvbar",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:32"
+              "location": "cucumber\\steps\\login.steps.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 1098366400
+              "duration": 1098236099
             }
           },
           {
@@ -53,7 +53,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 289122699
+              "duration": 348930200
             }
           }
         ],
@@ -78,11 +78,11 @@
             "line": 6,
             "name": "el usuario esta en la pagina de inicio",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:18"
+              "location": "cucumber\\steps\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 3025257999
+              "duration": 2216131999
             }
           },
           {
@@ -91,11 +91,11 @@
             "line": 14,
             "name": "el usuario inicia sesion con usuario \"felipe.guzman.a@gmail.com\" y contraseña \"123456\"",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:28"
+              "location": "cucumber\\steps\\login.steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 2135233400
+              "duration": 2158056099
             }
           },
           {
@@ -104,11 +104,11 @@
             "line": 15,
             "name": "el titulo de la pagina debe ser \"STORE\"",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:43"
+              "location": "cucumber\\steps\\login.steps.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 4751400
+              "duration": 266679099
             }
           },
           {
@@ -116,7 +116,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 289422399
+              "duration": 284191299
             }
           }
         ],
@@ -141,11 +141,11 @@
             "line": 6,
             "name": "el usuario esta en la pagina de inicio",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:18"
+              "location": "cucumber\\steps\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 2236510700
+              "duration": 2303641400
             }
           },
           {
@@ -154,11 +154,11 @@
             "line": 18,
             "name": "el usuario abre el modal de login",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:47"
+              "location": "cucumber\\steps\\login.steps.ts:48"
             },
             "result": {
               "status": "passed",
-              "duration": 569554800
+              "duration": 553603600
             }
           },
           {
@@ -167,11 +167,11 @@
             "line": 19,
             "name": "el usuario cierra el modal",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:52"
+              "location": "cucumber\\steps\\login.steps.ts:53"
             },
             "result": {
               "status": "passed",
-              "duration": 527181099
+              "duration": 550644400
             }
           },
           {
@@ -180,11 +180,11 @@
             "line": 20,
             "name": "el modal de login no debe ser visible",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:58"
+              "location": "cucumber\\steps\\login.steps.ts:59"
             },
             "result": {
               "status": "passed",
-              "duration": 5099200
+              "duration": 4827199
             }
           },
           {
@@ -192,7 +192,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 279069400
+              "duration": 254953100
             }
           }
         ],
@@ -217,11 +217,11 @@
             "line": 6,
             "name": "el usuario esta en la pagina de inicio",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:18"
+              "location": "cucumber\\steps\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 2382383900
+              "duration": 2216246199
             }
           },
           {
@@ -230,11 +230,11 @@
             "line": 23,
             "name": "el boton de login debe estar visible",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:63"
+              "location": "cucumber\\steps\\login.steps.ts:64"
             },
             "result": {
               "status": "passed",
-              "duration": 17466399
+              "duration": 16150799
             }
           },
           {
@@ -242,7 +242,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 254899000
+              "duration": 245935300
             }
           }
         ],
@@ -267,11 +267,11 @@
             "line": 6,
             "name": "el usuario esta en la pagina de inicio",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:18"
+              "location": "cucumber\\steps\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 2161006900
+              "duration": 2156298299
             }
           },
           {
@@ -280,11 +280,11 @@
             "line": 26,
             "name": "el usuario inicia sesion con usuario \"felipe.guzman.a@gmail.com\" y contraseña \"123456\"",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:28"
+              "location": "cucumber\\steps\\login.steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 2127521000
+              "duration": 2154368800
             }
           },
           {
@@ -293,11 +293,11 @@
             "line": 27,
             "name": "el usuario debe ver su nombre en el nvbar",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:32"
+              "location": "cucumber\\steps\\login.steps.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 1138784700
+              "duration": 1129951799
             }
           },
           {
@@ -306,11 +306,11 @@
             "line": 28,
             "name": "el usuario hace logout",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:69"
+              "location": "cucumber\\steps\\login.steps.ts:70"
             },
             "result": {
               "status": "passed",
-              "duration": 764533600
+              "duration": 798077399
             }
           },
           {
@@ -319,11 +319,11 @@
             "line": 29,
             "name": "el boton de login debe estar visible",
             "match": {
-              "location": "cucumber\\steps\\login.steps.ts:63"
+              "location": "cucumber\\steps\\login.steps.ts:64"
             },
             "result": {
               "status": "passed",
-              "duration": 12032800
+              "duration": 11827300
             }
           },
           {
@@ -331,7 +331,246 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 265237399
+              "duration": 258463800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login---demoblaze;verificar-titulo-de-la-pagina",
+        "keyword": "Scenario Outline",
+        "line": 36,
+        "name": "Verificar titulo de la pagina",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2185695100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "el titulo de la pagina deser \"STORE\"",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16569400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 248600300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login---demoblaze;validar-que-la-pagina-de-demoblaze-carga-correctamente",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Validar que la pagina de Demoblaze carga correctamente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2212613400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 39,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2253629400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "el titulo de la pagina debe ser \"STORE\"",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17967399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 287126900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login---demoblaze;click-en-sigup-y-validar-moda-visible",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "CLick en sigup y validar moda visible",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2348083700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "usuario hace click en sigup",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 565840400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "debe estar visible el modal de sigup",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5565099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 258891999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login---demoblaze;scenario-validar-about-us",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Scenario validar about us",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario esta en la pagina de inicio",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2200276599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 47,
+            "name": "click en ir a aboutus",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 574105999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "debe estar visible video",
+            "match": {
+              "location": "cucumber\\steps\\login.steps.ts:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5419300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 249007600
             }
           }
         ],

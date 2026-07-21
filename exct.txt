@@ -9,3 +9,54 @@ npm install --save-dev @cucumber/cucumber
 npm install --save-dev @cucumber/pretty-formatter
 
 npm install --save-dev ts-node
+
+npm run cucumber
+
+npx ts-node logic/ejercicio6.ts
+
+----------------------------------
+# 1. Clonar el repo
+git clone https://github.com/consalud/qa-challenge.git
+
+# 2. Entrar a la carpeta
+cd qa-challenge
+
+# 3. Crear tu rama con tu nombre
+git checkout -b felipe-guzman
+
+# 4. Instalar dependencias
+npm install
+
+# 5. Verificar que todo funciona (correr tests de ejemplo)
+npx playwright test
+
+# 6. Abrir el README para ver los desafíos
+cat README.md
+
+-------------------------------------------------
+# 7. Subir tus cambios
+git add .
+git commit -m "feat: desafios tecnicos felipe guzman"
+git push origin felipe-guzman
+
+------------------------------------------------
+# 1. Clonar el repo
+git clone https://github.com/consalud/qa-challenge.git
+
+# 2. Entrar a la carpeta
+cd qa-challenge
+
+# 3. Crear tu rama
+git checkout -b felipe-guzman
+
+# 4. Instalar dependencias con Maven
+mvn install
+
+# 5. Verificar que funciona
+mvn test
+
+# 6. Ver el README
+cat README.md
+
+----------------------------------------
+mvn test -Dtest=KarateRunner -Dkarate.options="--tags @api"

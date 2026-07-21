@@ -1,0 +1,10 @@
+Total productos: 9
+Producto 1: Samsung galaxy s6
+Producto 2: Nokia lumia 1520
+Producto 3: Nexus 6
+Producto 4: Samsung galaxy s7
+Producto 5: Iphone 6 32gb
+Producto 6: Sony xperia z5
+Producto 7: HTC One M9
+Producto 8: Sony vaio i5
+Producto 9: Sony vaio i7

@@ -1,0 +1,8 @@
+# Instalar dependencias
+mvn install
+
+# Ejecutar tests
+mvn test                                              # todos los tests
+mvn test -Dtest=KarateRunner                          # runner específico
+mvn test -Dtest=KarateRunner -Dkarate.options="--tags @api"   # por tag
+mvn clean test                                        # limpiar y ejecutar
